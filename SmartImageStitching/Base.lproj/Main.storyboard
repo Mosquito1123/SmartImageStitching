@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uc9-Rf-tgQ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fbR-BD-S1Y">
+            <objects>
+                <viewController id="Uc9-Rf-tgQ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Efc-rN-gqc"/>
+                        <viewControllerLayoutGuide type="bottom" id="CUN-xr-THj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fYz-DV-DTi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-uV-Z77">
+                                <rect key="frame" x="0.0" y="104" width="414" height="84"/>
+                                <string key="text">Screenshot Stitching
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Continuous screen capture from top to bottom in other apps" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-oJ-aNe">
+                                <rect key="frame" x="50" y="238" width="312.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdm-2N-Uoj">
+                                <rect key="frame" x="50" y="299" width="243" height="41"/>
+                                <string key="text">2. Guarantee about 20% overlap
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-h3-OvK">
+                                <rect key="frame" x="50" y="441" width="303" height="61"/>
+                                <string key="text">4. Select the corresponding screenshot to splicing
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UHs-ju-yvI">
+                                <rect key="frame" x="132" y="712" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F5J-XP-JVs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Kml-7B-cQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" title="Start Stitching">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onMergeBegin:" destination="Uc9-Rf-tgQ" eventType="touchUpInside" id="50X-wV-Qct"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKi-rL-hKi">
+                                <rect key="frame" x="50" y="360" width="339.5" height="61"/>
+                                <string key="text">3. Go back to the current App and choose to start stitching.
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6qB-h3-OvK" firstAttribute="leading" secondItem="fYz-DV-DTi" secondAttribute="leadingMargin" constant="30" id="3FA-YX-TJQ"/>
+                            <constraint firstItem="LqF-uV-Z77" firstAttribute="top" secondItem="Efc-rN-gqc" secondAttribute="bottom" constant="60" id="BjX-KZ-Iya"/>
+                            <constraint firstItem="tAw-oJ-aNe" firstAttribute="top" secondItem="LqF-uV-Z77" secondAttribute="bottom" constant="50" id="Dea-t4-jya"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="EKi-rL-hKi" secondAttribute="trailing" id="ETm-4j-KtZ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Jdm-2N-Uoj" secondAttribute="trailing" id="GwV-dE-Q6G"/>
+                            <constraint firstItem="Jdm-2N-Uoj" firstAttribute="top" secondItem="tAw-oJ-aNe" secondAttribute="bottom" constant="20" id="Jyb-Jk-OKl"/>
+                            <constraint firstItem="EKi-rL-hKi" firstAttribute="top" secondItem="Jdm-2N-Uoj" secondAttribute="bottom" constant="20" id="MV7-xH-BWD"/>
+                            <constraint firstAttribute="trailing" secondItem="LqF-uV-Z77" secondAttribute="trailing" id="N8l-6H-1SF"/>
+                            <constraint firstItem="6qB-h3-OvK" firstAttribute="top" secondItem="EKi-rL-hKi" secondAttribute="bottom" constant="20" id="SDt-pa-IJc"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tAw-oJ-aNe" secondAttribute="trailing" id="YUC-LM-VUe"/>
+                            <constraint firstItem="CUN-xr-THj" firstAttribute="top" secondItem="UHs-ju-yvI" secondAttribute="bottom" constant="100" id="alG-ga-LMG"/>
+                            <constraint firstItem="LqF-uV-Z77" firstAttribute="leading" secondItem="fYz-DV-DTi" secondAttribute="leading" id="caE-1I-lPP"/>
+                            <constraint firstItem="LqF-uV-Z77" firstAttribute="top" secondItem="Efc-rN-gqc" secondAttribute="bottom" constant="53" id="cbF-ag-S6Q"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="6qB-h3-OvK" secondAttribute="trailing" id="jaO-U6-2sn"/>
+                            <constraint firstItem="UHs-ju-yvI" firstAttribute="centerX" secondItem="fYz-DV-DTi" secondAttribute="centerX" id="khl-dG-A5Z"/>
+                            <constraint firstItem="tAw-oJ-aNe" firstAttribute="leading" secondItem="fYz-DV-DTi" secondAttribute="leadingMargin" constant="30" id="n1i-KB-5A5"/>
+                            <constraint firstItem="Jdm-2N-Uoj" firstAttribute="leading" secondItem="fYz-DV-DTi" secondAttribute="leadingMargin" constant="30" id="nON-LO-RQ7"/>
+                            <constraint firstItem="EKi-rL-hKi" firstAttribute="leading" secondItem="fYz-DV-DTi" secondAttribute="leadingMargin" constant="30" id="tzP-mp-Qwy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cbF-ag-S6Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="okButton" destination="UHs-ju-yvI" id="gKV-k6-QDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ov7-jf-W8c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="-19"/>
+        </scene>
+    </scenes>
+</document>

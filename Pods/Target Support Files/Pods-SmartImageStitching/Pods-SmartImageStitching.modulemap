@@ -1,0 +1,6 @@
+framework module Pods_SmartImageStitching {
+  umbrella header "Pods-SmartImageStitching-umbrella.h"
+
+  export *
+  module * { export * }
+}

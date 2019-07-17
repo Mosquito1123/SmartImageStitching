@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB07ADE8C8B23A8B375FCA31 /* Pods_SmartImageStitching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A725B2EF879BE765D41BA2D /* Pods_SmartImageStitching.framework */; };
+		F34BB1D622DE3D8B00550E41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1D522DE3D8B00550E41 /* AppDelegate.m */; };
+		F34BB1DC22DE3D8B00550E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34BB1DA22DE3D8B00550E41 /* Main.storyboard */; };
+		F34BB1DE22DE3D8D00550E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34BB1DD22DE3D8D00550E41 /* Assets.xcassets */; };
+		F34BB1E122DE3D8D00550E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34BB1DF22DE3D8D00550E41 /* LaunchScreen.storyboard */; };
+		F34BB1E422DE3D8D00550E41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1E322DE3D8D00550E41 /* main.m */; };
+		F34BB1F022DE410500550E41 /* UIImage+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1EF22DE410500550E41 /* UIImage+M80.m */; };
+		F34BB20022DE437900550E41 /* M80ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1F222DE437900550E41 /* M80ImageViewController.m */; };
+		F34BB20122DE437900550E41 /* M80MergeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1F622DE437900550E41 /* M80MergeResult.m */; };
+		F34BB20222DE437900550E41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1F922DE437900550E41 /* ViewController.m */; };
+		F34BB20322DE437900550E41 /* M80RecentImageFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1FC22DE437900550E41 /* M80RecentImageFinder.m */; };
+		F34BB20422DE437900550E41 /* M80MainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB1FF22DE437900550E41 /* M80MainInteractor.m */; };
+		F34BB20D22DE438300550E41 /* M80ImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB20522DE438300550E41 /* M80ImageGenerator.m */; };
+		F34BB20E22DE438300550E41 /* M80ImageFingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB20622DE438300550E41 /* M80ImageFingerprint.m */; };
+		F34BB20F22DE438300550E41 /* M80Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB20B22DE438300550E41 /* M80Constraint.m */; };
+		F34BB21022DE438300550E41 /* M80ImageMergeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BB20C22DE438300550E41 /* M80ImageMergeInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A725B2EF879BE765D41BA2D /* Pods_SmartImageStitching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartImageStitching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B73A2AB121BA43045227CA /* Pods-SmartImageStitching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartImageStitching.debug.xcconfig"; path = "Target Support Files/Pods-SmartImageStitching/Pods-SmartImageStitching.debug.xcconfig"; sourceTree = "<group>"; };
+		E154B66D446781711B49C614 /* Pods-SmartImageStitching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartImageStitching.release.xcconfig"; path = "Target Support Files/Pods-SmartImageStitching/Pods-SmartImageStitching.release.xcconfig"; sourceTree = "<group>"; };
+		F34BB1D122DE3D8B00550E41 /* SmartImageStitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartImageStitching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34BB1D422DE3D8B00550E41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F34BB1D522DE3D8B00550E41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F34BB1DB22DE3D8B00550E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F34BB1DD22DE3D8D00550E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F34BB1E022DE3D8D00550E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F34BB1E222DE3D8D00550E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34BB1E322DE3D8D00550E41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F34BB1EE22DE410500550E41 /* UIImage+M80.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+M80.h"; sourceTree = "<group>"; };
+		F34BB1EF22DE410500550E41 /* UIImage+M80.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+M80.m"; sourceTree = "<group>"; };
+		F34BB1F222DE437900550E41 /* M80ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80ImageViewController.m; sourceTree = "<group>"; };
+		F34BB1F322DE437900550E41 /* M80ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80ImageViewController.h; sourceTree = "<group>"; };
+		F34BB1F622DE437900550E41 /* M80MergeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MergeResult.m; sourceTree = "<group>"; };
+		F34BB1F722DE437900550E41 /* M80MergeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80MergeResult.h; sourceTree = "<group>"; };
+		F34BB1F922DE437900550E41 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F34BB1FA22DE437900550E41 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F34BB1FC22DE437900550E41 /* M80RecentImageFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80RecentImageFinder.m; sourceTree = "<group>"; };
+		F34BB1FD22DE437900550E41 /* M80MainInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80MainInteractor.h; sourceTree = "<group>"; };
+		F34BB1FE22DE437900550E41 /* M80RecentImageFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80RecentImageFinder.h; sourceTree = "<group>"; };
+		F34BB1FF22DE437900550E41 /* M80MainInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80MainInteractor.m; sourceTree = "<group>"; };
+		F34BB20522DE438300550E41 /* M80ImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80ImageGenerator.m; sourceTree = "<group>"; };
+		F34BB20622DE438300550E41 /* M80ImageFingerprint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80ImageFingerprint.m; sourceTree = "<group>"; };
+		F34BB20722DE438300550E41 /* M80ImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80ImageGenerator.h; sourceTree = "<group>"; };
+		F34BB20822DE438300550E41 /* M80ImageFingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80ImageFingerprint.h; sourceTree = "<group>"; };
+		F34BB20922DE438300550E41 /* M80Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80Constraint.h; sourceTree = "<group>"; };
+		F34BB20A22DE438300550E41 /* M80ImageMergeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80ImageMergeInfo.h; sourceTree = "<group>"; };
+		F34BB20B22DE438300550E41 /* M80Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80Constraint.m; sourceTree = "<group>"; };
+		F34BB20C22DE438300550E41 /* M80ImageMergeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80ImageMergeInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F34BB1CE22DE3D8B00550E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB07ADE8C8B23A8B375FCA31 /* Pods_SmartImageStitching.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13F7FA9FA803377D49AAF3F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0B73A2AB121BA43045227CA /* Pods-SmartImageStitching.debug.xcconfig */,
+				E154B66D446781711B49C614 /* Pods-SmartImageStitching.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		68026D08E233499C7291A078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A725B2EF879BE765D41BA2D /* Pods_SmartImageStitching.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34BB1C822DE3D8B00550E41 = {
+			isa = PBXGroup;
+			children = (
+				F34BB1D322DE3D8B00550E41 /* SmartImageStitching */,
+				F34BB1D222DE3D8B00550E41 /* Products */,
+				13F7FA9FA803377D49AAF3F0 /* Pods */,
+				68026D08E233499C7291A078 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F34BB1D222DE3D8B00550E41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1D122DE3D8B00550E41 /* SmartImageStitching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F34BB1D322DE3D8B00550E41 /* SmartImageStitching */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1EA22DE406800550E41 /* Classes */,
+				F34BB1D422DE3D8B00550E41 /* AppDelegate.h */,
+				F34BB1D522DE3D8B00550E41 /* AppDelegate.m */,
+				F34BB1DA22DE3D8B00550E41 /* Main.storyboard */,
+				F34BB1DD22DE3D8D00550E41 /* Assets.xcassets */,
+				F34BB1DF22DE3D8D00550E41 /* LaunchScreen.storyboard */,
+				F34BB1E222DE3D8D00550E41 /* Info.plist */,
+				F34BB1E322DE3D8D00550E41 /* main.m */,
+			);
+			path = SmartImageStitching;
+			sourceTree = "<group>";
+		};
+		F34BB1EA22DE406800550E41 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1ED22DE40E200550E41 /* Util */,
+				F34BB1EC22DE40BD00550E41 /* Algorithm */,
+				F34BB1EB22DE40A900550E41 /* Sections */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F34BB1EB22DE40A900550E41 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1F422DE437900550E41 /* Main */,
+				F34BB1F122DE437900550E41 /* Preview */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		F34BB1EC22DE40BD00550E41 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB20922DE438300550E41 /* M80Constraint.h */,
+				F34BB20B22DE438300550E41 /* M80Constraint.m */,
+				F34BB20822DE438300550E41 /* M80ImageFingerprint.h */,
+				F34BB20622DE438300550E41 /* M80ImageFingerprint.m */,
+				F34BB20722DE438300550E41 /* M80ImageGenerator.h */,
+				F34BB20522DE438300550E41 /* M80ImageGenerator.m */,
+				F34BB20A22DE438300550E41 /* M80ImageMergeInfo.h */,
+				F34BB20C22DE438300550E41 /* M80ImageMergeInfo.m */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		F34BB1ED22DE40E200550E41 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1EE22DE410500550E41 /* UIImage+M80.h */,
+				F34BB1EF22DE410500550E41 /* UIImage+M80.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F34BB1F122DE437900550E41 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1F222DE437900550E41 /* M80ImageViewController.m */,
+				F34BB1F322DE437900550E41 /* M80ImageViewController.h */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		F34BB1F422DE437900550E41 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1F522DE437900550E41 /* Entity */,
+				F34BB1F822DE437900550E41 /* ViewController */,
+				F34BB1FB22DE437900550E41 /* Interactor */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F34BB1F522DE437900550E41 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1F622DE437900550E41 /* M80MergeResult.m */,
+				F34BB1F722DE437900550E41 /* M80MergeResult.h */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F34BB1F822DE437900550E41 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1F922DE437900550E41 /* ViewController.m */,
+				F34BB1FA22DE437900550E41 /* ViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F34BB1FB22DE437900550E41 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F34BB1FC22DE437900550E41 /* M80RecentImageFinder.m */,
+				F34BB1FD22DE437900550E41 /* M80MainInteractor.h */,
+				F34BB1FE22DE437900550E41 /* M80RecentImageFinder.h */,
+				F34BB1FF22DE437900550E41 /* M80MainInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F34BB1D022DE3D8B00550E41 /* SmartImageStitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34BB1E722DE3D8D00550E41 /* Build configuration list for PBXNativeTarget "SmartImageStitching" */;
+			buildPhases = (
+				CCCD796FCDC46707F761679B /* [CP] Check Pods Manifest.lock */,
+				F34BB1CD22DE3D8B00550E41 /* Sources */,
+				F34BB1CE22DE3D8B00550E41 /* Frameworks */,
+				F34BB1CF22DE3D8B00550E41 /* Resources */,
+				107796FC02D2C8BAB914B71E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartImageStitching;
+			productName = SmartImageStitching;
+			productReference = F34BB1D122DE3D8B00550E41 /* SmartImageStitching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F34BB1C922DE3D8B00550E41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Cranberry;
+				TargetAttributes = {
+					F34BB1D022DE3D8B00550E41 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F34BB1CC22DE3D8B00550E41 /* Build configuration list for PBXProject "SmartImageStitching" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F34BB1C822DE3D8B00550E41;
+			productRefGroup = F34BB1D222DE3D8B00550E41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F34BB1D022DE3D8B00550E41 /* SmartImageStitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F34BB1CF22DE3D8B00550E41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34BB1E122DE3D8D00550E41 /* LaunchScreen.storyboard in Resources */,
+				F34BB1DE22DE3D8D00550E41 /* Assets.xcassets in Resources */,
+				F34BB1DC22DE3D8B00550E41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		107796FC02D2C8BAB914B71E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartImageStitching/Pods-SmartImageStitching-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartImageStitching/Pods-SmartImageStitching-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartImageStitching/Pods-SmartImageStitching-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCD796FCDC46707F761679B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartImageStitching-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F34BB1CD22DE3D8B00550E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34BB20222DE437900550E41 /* ViewController.m in Sources */,
+				F34BB20422DE437900550E41 /* M80MainInteractor.m in Sources */,
+				F34BB20D22DE438300550E41 /* M80ImageGenerator.m in Sources */,
+				F34BB20F22DE438300550E41 /* M80Constraint.m in Sources */,
+				F34BB20322DE437900550E41 /* M80RecentImageFinder.m in Sources */,
+				F34BB1F022DE410500550E41 /* UIImage+M80.m in Sources */,
+				F34BB20022DE437900550E41 /* M80ImageViewController.m in Sources */,
+				F34BB21022DE438300550E41 /* M80ImageMergeInfo.m in Sources */,
+				F34BB1E422DE3D8D00550E41 /* main.m in Sources */,
+				F34BB1D622DE3D8B00550E41 /* AppDelegate.m in Sources */,
+				F34BB20122DE437900550E41 /* M80MergeResult.m in Sources */,
+				F34BB20E22DE438300550E41 /* M80ImageFingerprint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F34BB1DA22DE3D8B00550E41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34BB1DB22DE3D8B00550E41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F34BB1DF22DE3D8D00550E41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34BB1E022DE3D8D00550E41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F34BB1E522DE3D8D00550E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F34BB1E622DE3D8D00550E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F34BB1E822DE3D8D00550E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B73A2AB121BA43045227CA /* Pods-SmartImageStitching.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SWU3UWH68;
+				INFOPLIST_FILE = SmartImageStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartImageStitchingByCranberry.SmartImageStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F34BB1E922DE3D8D00550E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E154B66D446781711B49C614 /* Pods-SmartImageStitching.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SWU3UWH68;
+				INFOPLIST_FILE = SmartImageStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartImageStitchingByCranberry.SmartImageStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F34BB1CC22DE3D8B00550E41 /* Build configuration list for PBXProject "SmartImageStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BB1E522DE3D8D00550E41 /* Debug */,
+				F34BB1E622DE3D8D00550E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34BB1E722DE3D8D00550E41 /* Build configuration list for PBXNativeTarget "SmartImageStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34BB1E822DE3D8D00550E41 /* Debug */,
+				F34BB1E922DE3D8D00550E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F34BB1C922DE3D8B00550E41 /* Project object */;
+}

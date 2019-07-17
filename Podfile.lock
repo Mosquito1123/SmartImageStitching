@@ -1,0 +1,38 @@
+PODS:
+  - Crashlytics (3.13.4):
+    - Fabric (~> 1.10.2)
+  - CTAssetsPickerController (3.3.1):
+    - PureLayout (~> 3.0.0)
+  - Fabric (1.10.2)
+  - PureLayout (3.0.2)
+  - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - CTAssetsPickerController
+  - Fabric
+  - PureLayout
+  - SVProgressHUD
+  - Toast
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - CTAssetsPickerController
+    - Fabric
+    - PureLayout
+    - SVProgressHUD
+    - Toast
+
+SPEC CHECKSUMS:
+  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
+  CTAssetsPickerController: b1d1d50ab87cf6b8b13531de5f4530482e7e53ed
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 43a41be403db7c85652ec0a6c0bf9097878ca556
+
+COCOAPODS: 1.7.4
